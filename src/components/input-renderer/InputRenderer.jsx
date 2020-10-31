@@ -9,9 +9,9 @@ export const InputRenderer = () => {
     setMesurements({ ...mesurements, gender: e.target.value });
 
   return (
-    <div className="input-container">
+    <div className="container">
       <div className="label-container">
-        <label htmlFor="gender" className="mesurements-label">
+        <label htmlFor="select-gender" className="mesurements-label">
           Gender:{' '}
         </label>
         <label htmlFor="age" className="mesurements-label">
@@ -24,23 +24,34 @@ export const InputRenderer = () => {
           Weight:{' '}
         </label>
       </div>
-      <div className="select-gender">
-        <input
-          checked={mesurements.gender === 'male'}
-          value="male"
-          type="radio"
-          name="gender"
-          id="gender-male"
-          onChange={(e) => handleGenderChange(e)}
-        />
-        <input
-          checked={mesurements.gender === 'female'}
-          value="female"
-          type="radio"
-          name="gender"
-          id="gender-female"
-          onChange={(e) => handleGenderChange(e)}
-        />
+      <div className="input-container">
+        <div className="select-gender">
+          <label htmlFor="gender-male">
+            Male
+            <input
+              checked={mesurements.gender === 'male'}
+              value="male"
+              type="radio"
+              name="gender"
+              id="gender-male"
+              onChange={(e) => handleGenderChange(e)}
+            />
+          </label>
+          <label htmlFor="gender-female">
+            Female
+            <input
+              checked={mesurements.gender === 'female'}
+              value="female"
+              type="radio"
+              name="gender"
+              id="gender-female"
+              onChange={(e) => handleGenderChange(e)}
+            />
+          </label>
+        </div>
+        <div className="select-age">
+          <input type="number" className="age" />
+        </div>
       </div>
     </div>
   );

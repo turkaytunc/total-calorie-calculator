@@ -21,8 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+       "testAll": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject",
-    "testAll": "react-scripts test --coverage --watchAll",
     "commit": "sh commit.sh",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

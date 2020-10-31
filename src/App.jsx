@@ -1,7 +1,7 @@
 import './app.scss';
 
 function App() {
-  return <div className="App">Total Calorie Calculator</div>;
+  return <div className="app">Total Calorie Calculator</div>;
 }
 
 export default App;

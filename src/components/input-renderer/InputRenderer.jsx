@@ -12,9 +12,9 @@ export const InputRenderer = () => {
     setMesurements({ ...mesurements, age: e.target.value });
 
   const handleHeightChange = (e) =>
-    setMesurements({ ...mesurements, age: e.target.value });
+    setMesurements({ ...mesurements, height: e.target.value });
   const handleWeightChange = (e) =>
-    setMesurements({ ...mesurements, age: e.target.value });
+    setMesurements({ ...mesurements, weight: e.target.value });
 
   return (
     <div className="container">
@@ -61,18 +61,24 @@ export const InputRenderer = () => {
         </div>
 
         <input
+          max={20}
+          min={15}
           type="number"
           className="select-age input-item"
           value={mesurements.age}
           onChange={(e) => handleAgeChange(e)}
         />
         <input
+          max={220}
+          min={100}
           type="number"
           className="select-height input-item"
           value={mesurements.height}
           onChange={(e) => handleHeightChange(e)}
         />
         <input
+          max={200}
+          min={30}
           type="number"
           className="select-weight input-item"
           value={mesurements.weight}

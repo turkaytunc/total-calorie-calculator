@@ -16,6 +16,7 @@ script:
   - npm install -g codecov
   - npm test -- --clearCache
   - npm test -- --coverage
+  - npm run build
   #- CI=false npm run build
 
 after_script:

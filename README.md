@@ -1,1 +1,1 @@
-# total-calorie-calculator
+# Total-calorie-calculator

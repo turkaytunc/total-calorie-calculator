@@ -1,19 +1,26 @@
 .app {
   text-align: center;
-  width: 90%;
-  height: 90%;
+  width: 100%;
   padding-top: 2em;
   padding-bottom: 5em;
-  background: linear-gradient(150deg, #aa6d44 20%, #0c1414 95%);
+  background: rgb(167, 83, 15);
   color: aliceblue;
   text-shadow: 2px 1px 2px #222;
   margin: 0 auto;
   font-size: 1.5em;
-  border-radius: 5px;
+  height: 100vh;
+
+  header {
+    font-size: 2.3em;
+  }
 }
 
 @media screen and (max-width: 520px) {
   .app {
     width: 100%;
+
+    header {
+      font-size: 1.4em;
+    }
   }
 }

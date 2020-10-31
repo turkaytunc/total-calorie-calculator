@@ -1,4 +1,9 @@
 language: node_js
+
+os: linux
+
+dist: xenial
+
 node_js: 
   - "stable"
 
@@ -23,7 +28,8 @@ after_script:
   - CODECOV_TOKEN=$CODECOV_TOKEN codecov
 deploy:
   provider: pages
-  skip_cleanup: true
+  strategy: git
+  cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: build
   on:

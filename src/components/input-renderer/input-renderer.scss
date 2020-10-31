@@ -19,7 +19,21 @@
   align-items: flex-start;
   margin-left: 1em;
 
-  > div {
-    padding-bottom: 1em;
+  &:nth-child(odd) {
+    margin-bottom: 1em;
+    min-height: 1em;
+    padding-bottom: 0;
   }
+  &:nth-child(even) {
+    margin-bottom: 1em;
+    min-height: 1em;
+    padding-bottom: 0;
+  }
+}
+
+.select-age {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
 }

@@ -59,19 +59,19 @@ export const InputRenderer = () => {
         </div>
         <input
           type="number"
-          className="select-age"
+          className="select-age input-item"
           value={mesurements.age}
           onChange={(e) => handleAgeChange(e)}
         />
         <input
           type="number"
-          className="select-height"
+          className="select-height input-item"
           value={mesurements.height}
           onChange={(e) => handleHeightChange(e)}
         />
         <input
           type="number"
-          className="select-weight"
+          className="select-weight input-item"
           value={mesurements.weight}
           onChange={(e) => handleWeightChange(e)}
         />

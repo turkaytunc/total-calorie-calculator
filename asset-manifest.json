@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/total-calorie-calculator/static/css/main.b9c1ef91.chunk.css",
+    "main.js": "/total-calorie-calculator/static/js/main.801e8576.chunk.js",
+    "main.js.map": "/total-calorie-calculator/static/js/main.801e8576.chunk.js.map",
+    "runtime-main.js": "/total-calorie-calculator/static/js/runtime-main.52fe10a0.js",
+    "runtime-main.js.map": "/total-calorie-calculator/static/js/runtime-main.52fe10a0.js.map",
+    "static/js/2.30efbfc9.chunk.js": "/total-calorie-calculator/static/js/2.30efbfc9.chunk.js",
+    "static/js/2.30efbfc9.chunk.js.map": "/total-calorie-calculator/static/js/2.30efbfc9.chunk.js.map",
+    "static/js/3.f3339bd1.chunk.js": "/total-calorie-calculator/static/js/3.f3339bd1.chunk.js",
+    "static/js/3.f3339bd1.chunk.js.map": "/total-calorie-calculator/static/js/3.f3339bd1.chunk.js.map",
+    "index.html": "/total-calorie-calculator/index.html",
+    "static/css/main.b9c1ef91.chunk.css.map": "/total-calorie-calculator/static/css/main.b9c1ef91.chunk.css.map",
+    "static/js/2.30efbfc9.chunk.js.LICENSE.txt": "/total-calorie-calculator/static/js/2.30efbfc9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52fe10a0.js",
+    "static/js/2.30efbfc9.chunk.js",
+    "static/css/main.b9c1ef91.chunk.css",
+    "static/js/main.801e8576.chunk.js"
+  ]
+}

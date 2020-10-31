@@ -5,9 +5,7 @@ function App() {
   return (
     <div className="app">
       Total Calorie Calculator
-      <div className="input-container">
-        <InputRenderer />
-      </div>
+      <InputRenderer />
     </div>
   );
 }

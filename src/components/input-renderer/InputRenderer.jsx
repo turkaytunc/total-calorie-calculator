@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { initialState } from '../../util/initialState';
+import './input-renderer.scss';
 
 export const InputRenderer = () => {
   const [mesurements, setMesurements] = useState(initialState);
 
+  const handleGenderChange = (e) =>
+    setMesurements({ ...mesurements, gender: e.target.value });
+
   return (
-    <div>
+    <div className="input-container">
       <div className="label-container">
         <label htmlFor="gender" className="mesurements-label">
           Gender:{' '}
@@ -27,6 +31,7 @@ export const InputRenderer = () => {
           type="radio"
           name="gender"
           id="gender-male"
+          onChange={(e) => handleGenderChange(e)}
         />
         <input
           checked={mesurements.gender === 'female'}
@@ -34,6 +39,7 @@ export const InputRenderer = () => {
           type="radio"
           name="gender"
           id="gender-female"
+          onChange={(e) => handleGenderChange(e)}
         />
       </div>
     </div>

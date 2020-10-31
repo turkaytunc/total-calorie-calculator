@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   padding-left: 1em;
+  padding-top: 2em;
 }
 
 .label-container {
@@ -16,28 +17,41 @@
 
 .input-container {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  align-items: center;
-  justify-content: flex-start;
-  background-color: red;
+  grid-template-rows: repeat(4, 2.4em);
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  justify-content: center;
   width: 90%;
   padding-left: 2em;
-}
+  padding-right: 2em;
+  margin: 0 auto;
 
-.select-gender {
-  background-color: green;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.select-age {
-  width: 100%;
-  justify-content: flex-start;
-  align-items: center;
+  :first-child {
+    justify-self: flex-start;
+  }
 }
 
 .input-item {
-  //margin-bottom: 2em;
   height: 2em;
   width: 100%;
+  padding: 0;
+}
+
+.select-age {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.select-gender {
+  margin: 0;
+  padding: 0;
+
+  :nth-child(2) {
+    margin-left: 1em;
+  }
+
+  .gender-input {
+    margin-left: 0.5em;
+  }
 }
